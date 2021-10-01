@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template Laundryku</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-slack-hash"></i>
+            <h4>Laundryku</h4>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <h4>Administrator</h4><hr>
+                <p>Yeremia Wijaya</p>
+            </div>
+            <nav class="sidebar-menu">
+                <div class="menu-head">
+                    Dashboard
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-database"></i>Dashboard</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Master
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-user-alt"></i>Kasir</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-archive"></i>Paket</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i>Outlet</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Services
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i>Member</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-money-check-alt"></i>Transaksi</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-scroll"></i>Laporan</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Keluar
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i>Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="content-main">
+                <div class="row">
+                    <div class="col-12 col-sm mb-3 mr-0 mr-sm-2">
+                        <div class="card p-4 mb-3">
+                            <h4 class="mb-3">TRXLDR00129401920</h4>
+                            <div class="form-group">
+                                <label for="namaMember">Nama Lengkap</label>
+                                <input type="text" class="form-control" name="namaMember" id="namaMember" disabled>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for="noTelp">No Telp</label>
+                                    <input type="tel" class="form-control" name="noTelp" id="noTelp" disabled>
+                                </div>
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for="jenisKelamin">Jenis Kelamin</label>
+                                    <input type="tel" class="form-control" name="jenisKelamin" id="jenisKelamin" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" class="form-control" name="alamat" id="alamat" disabled>
+                            </div>
+                        </div>
+                        <div class="card p-4">
+                            <div class="form-group">
+                                <label for="namaPaket">Nama Paket</label>
+                                <input type="text" class="form-control" name="namaPaket" id="namaPaket" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggalAmbil">Tanggal Ambil</label>
+                                <input type="date" class="form-control" name="tanggalAmbil" id="tanggalAmbil" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="keterangan">Keterangan</label>
+                                <textarea name="keterangan" id="keterangan" cols="1" rows="3" class="form-control" disabled></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="card p-4">
+                            <div class="form-row">
+                                <div class="form-group col-12 col-lg-2">
+                                    <label for="qty">Qty</label>
+                                    <input type="text" class="form-control" name="qty" id="qty" disabled>
+                                </div>
+                                <div class="form-group col-12 col-lg-10">
+                                    <label for="hargaTotal">Harga Total</label>
+                                    <input type="text" class="form-control" name="hargaTotal" id="hargaTotal" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="namaUser">Status Bayar</label>
+                                <input type="text" class="form-control" name="namaUser" id="namaUser" value="Lunas" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="namaUser">Status Pengerjaan</label>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Waiting List</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary mr-2">Update Status Pengerjaan</button>
+                                <button class="btn btn-warning text-white">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <label for="sidebar-toggle" class="body-label"></label>
+</body>
+
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<script src="index.js"></script>
+</html>

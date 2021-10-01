@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template Laundryku</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-slack-hash"></i>
+            <h4>Laundryku</h4>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <h4>Administrator</h4><hr>
+                <p>Yeremia Wijaya</p>
+            </div>
+            <nav class="sidebar-menu">
+                <div class="menu-head">
+                    Dashboard
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-database"></i>Dashboard</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Master
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-user-alt"></i>Kasir</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-archive"></i>Paket</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i>Outlet</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Services
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i>Member</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-money-check-alt"></i>Transaksi</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-scroll"></i>Laporan</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Keluar
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i>Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="content-main">
+                <div class="row m-0 justify-content-between">
+                    <div class="col-12 col-sm mb-2 mr-0 mr-sm-2">
+                        <div class="card p-4">
+                            <div class="d-flex mb-4 justify-content-between align-items-center">
+                                <div>
+                                    <h4>Tambah Transaksi</h4>
+                                    <span>Form pendaftaran transaksi baru</span>
+                                </div>
+                            </div>
+                            <div class="d-block mb-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="select2" id="select2">
+                                    <label class="custom-control-label" for="select2">Isi Otomatis</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="select1" id="select1" checked>
+                                    <label class="custom-control-label" for="select1">Isi Manual</label>
+                                </div>
+                            </div>
+                            <div class="form-group" id="fieldNama">
+                                <label for="namaMember">Nama Lengkap</label>
+                                <input type="text" class="form-control" name="namaMember" id="namaMember" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for="noTelp">No Telp</label>
+                                    <input type="tel" class="form-control" name="noTelp" id="noTelp" required>
+                                </div>
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for="jenisKelamin">Jenis Kelamin</label>
+                                    <select class="custom-select" id="jenisKelamin" required>
+                                        <option selected disabled value="">Pilih</option>
+                                        <option value="1">Laki Laki</option>
+                                        <option value="2">Perempuan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" class="form-control" name="alamat" id="alamat" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="card p-4">
+                            <div class="d-flex mb-4 justify-content-between align-items-center">
+                                <div>
+                                    <h4>Form Laundry</h4>
+                                    <span>Form laundry</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="paket">Pilih Paket</label>
+                                <select name="paket" class="custom-select" id="paket">
+                                    <option selected disabled value="">Pilih</option>
+                                    <option value="">Cuci Cepat</option>
+                                    <option value="">Cuci Kilat</option>
+                                    <option value="">Cuci Bersih</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Isi Paket</label>
+                                <div class="row">
+                                    <div class="col-6 col-sm-5 col-md-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="seragam" name="paket[]" id="seragam">
+                                            <label class="custom-control-label" for="seragam">Seragam</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="kemeja" name="paket[]" id="kemeja">
+                                            <label class="custom-control-label" for="kemeja">Kemeja</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="kaos" name="paket[]" id="kaos">
+                                            <label class="custom-control-label" for="kaos">Kaos</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="celana" name="paket[]" id="celana">
+                                            <label class="custom-control-label" for="celana">Celana</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="selimut" name="paket[]" id="selimut">
+                                            <label class="custom-control-label" for="selimut">Selimut</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="bedcover" name="paket[]" id="bedcover">
+                                            <label class="custom-control-label" for="bedcover">Bed Cover</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="hargaPaket">Harga / Kg</label>
+                                <input class="form-control" type="number" name="hargaPaket" id="hargaPaket" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="waktuAmbil">Waktu Ambil</label>
+                                <input class="form-control" type="date" name="waktuAmbil" id="waktuAmbil">
+                            </div>
+                            <div class="form-group">
+                                <label for="beratLaundry">Berat Laundry / Kg</label>
+                                <input class="form-control" type="number" min="1" name="beratLaundry" id="beratLaundry">
+                            </div>
+                            <div class="form-group ">
+                                <label for="keterangan">Keterangan</label>
+                                <textarea name="keterangan" id="keterangan" cols="1" rows="3" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalHarga">Total Harga</label>
+                                <input class="form-control" type="number" min="1" name="totalHarga" id="totalHarga" disabled>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="col-12 col-md-4">
+                                    <button type="submit" class="btn btn-block btn-primary">Kirim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <label for="sidebar-toggle" class="body-label"></label>
+</body>
+</html>

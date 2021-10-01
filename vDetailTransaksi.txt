@@ -1,0 +1,37 @@
+CREATE VIEW vDetailTransaksi
+AS
+SELECT
+	id_detail,
+    keterangan,
+    qty,
+    harga_total,
+    jumlah_bayar,
+    kembalian,
+    trans.id_transaksi,
+    trans.status_bayar,
+    trans.status_pengerjaan,
+    trans.tgl_ambil,
+    trans.tgl_bayar,
+    trans.created_at,
+    trans.biaya_tambahan,
+    trans.pajak,
+    trans.diskon,
+    trans.kode_invoice,
+    trans.id_user,
+    trans.id_outlet,
+    outlet.nama_outlet,
+    outlet.alamat AS alamat_outlet,
+    outlet.telp AS telp_outlet,
+    tUser.nama AS kasir,
+    paket.nama_paket,
+    member.nama,
+    member.alamat,
+    member.telp,
+    member.gender
+FROM 
+	ldr_detail_transaksi
+JOIN ldr_transaksi AS trans USING(id_transaksi)
+JOIN ldr_outlet AS outlet ON trans.id_outlet = outlet.id_outlet
+JOIN ldr_member AS member ON trans.id_member = member.id_member
+JOIN ldr_paket AS paket USING(id_paket)
+JOIN ldr_user AS tUser ON trans.id_user = tUser.id_user;

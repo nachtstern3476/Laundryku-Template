@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template Laundryku</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-slack-hash"></i>
+            <h4>Laundryku</h4>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <h4>Administrator</h4><hr>
+                <p>Yeremia Wijaya</p>
+            </div>
+            <nav class="sidebar-menu">
+                <div class="menu-head">
+                    Dashboard
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-database"></i>Dashboard</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Master
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-user-alt"></i>Kasir</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-archive"></i>Paket</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i>Outlet</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Services
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i>Member</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-money-check-alt"></i>Transaksi</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-scroll"></i>Laporan</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Keluar
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i>Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="content-main card p-4">
+                <div class="mb-4">
+                    <h4>Laporan</h4>
+                    <span>Generate laporan mulai dari tanggal yang kamu pilih</span>
+                    <div class="form-row mt-3">
+                        <div class="col-12 col-md-3 col-lg-2 mb-2">
+                            <input type="date" class="form-control mr-sm-2" name="start-date">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-2 mb-2">
+                            <input type="date" class="form-control mr-sm-3" name="end-date">
+                        </div>           
+                        <div class="col-12 col-md-3 col-lg-2">
+                            <button class="btn btn-block btn-primary">Generate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Member</th>
+                                <th scope="col">Alamat</th>
+                                <th scope="col">Paket</th>
+                                <th scope="col">Waktu Ambil</th>
+                                <th scope="col">Status Proses</th>
+                                <th scope="col">Status Bayar</th>
+                                <th scope="col">Total Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Yeremia Wijaya</td>
+                                <td>Anjasrani 8 no 4</td>
+                                <td>Cuci Cepat</td>
+                                <td>25-05-2002</td>
+                                <td>
+                                    <p class="text-primary">Selesai</p>
+                                </td>
+                                <td>
+                                    <p class="text-primary">Paid</p>
+                                </td>
+                                <td>Rp. 200.000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="7">Total Penghasilan</th>
+                                <td>Rp. 200.000</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="row justify-content-end mt-3 mt-sm-3 mt-md-0">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <button class="btn btn-block btn-success">Unduh Excel</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <label for="sidebar-toggle" class="body-label"></label>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template Laundryku</title>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-slack-hash"></i>
+            <h4>Laundryku</h4>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <h4>Administrator</h4><hr>
+                <p>Yeremia Wijaya</p>
+            </div>
+            <nav class="sidebar-menu">
+                <div class="menu-head">
+                    Dashboard
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-database"></i>Dashboard</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Master
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-user-alt"></i>Kasir</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-archive"></i>Paket</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i>Outlet</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Services
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i>Member</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-money-check-alt"></i>Transaksi</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-scroll"></i>Laporan</a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    Keluar
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i>Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="content-main card p-4">
+                <div class="d-flex mb-4 justify-content-between align-items-center">
+                    <div>
+                        <h4>Tambah Paket</h4>
+                        <span>Form pendaftaran paket baru</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="namaPaket">Nama Paket</label>
+                            <input type="text" class="form-control" name="namaPaket" id="namaPaket" required>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="noTelp">Harga / Kg</label>
+                            <input type="number" min="1000" class="form-control" name="noTelp" id="noTelp" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Jenis Paket</label>
+                        <div class="row">
+                            <div class="col-6 col-sm-3 col-md-2">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="seragam" name="paket[]" id="seragam">
+                                    <label class="custom-control-label" for="seragam">Seragam</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="kemeja" name="paket[]" id="kemeja">
+                                    <label class="custom-control-label" for="kemeja">Kemeja</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="kaos" name="paket[]" id="kaos">
+                                    <label class="custom-control-label" for="kaos">Kaos</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="celana" name="paket[]" id="celana">
+                                    <label class="custom-control-label" for="celana">Celana</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="selimut" name="paket[]" id="selimut">
+                                    <label class="custom-control-label" for="selimut">Selimut</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="bedcover" name="paket[]" id="bedcover">
+                                    <label class="custom-control-label" for="bedcover">Bed Cover</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <label for="sidebar-toggle" class="body-label"></label>
+</body>
+</html>
